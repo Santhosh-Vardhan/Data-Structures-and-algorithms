@@ -12,3 +12,9 @@ This is where we start to abstract binary search. A sequence (array) is really j
 What we can call the main theorem states that binary search can be used if and only if for all x in S, p(x) implies p(y) for all y > x. This property is what we use when we discard the second half of the search space. It is equivalent to saying that ¬p(x) implies ¬p(y) for all y < x (the symbol ¬ denotes the logical not operator), which is what we use when we discard the first half of the search space. The theorem can easily be proven, although I’ll omit the proof here to reduce clutter. <br>
 
 These two parts are most often interleaved: when we think a problem can be solved by binary search, we aim to design the predicate so that it satisfies the condition in the main theorem.
+
+## Merge Sort
+The principle aspect involved in merge sort is a merge function which merges two sorted arrays and forms a final array that contains elements from both the arrays in a sorted fashion. It is quite fascinating how a simple merge function can be used to solve one of the most sought-after problems in Computer Science i.e. sorting, in one of the most efficient ways possible. The time complexity of merge sort is O(n log n). It is a divide-and-conquer algorithm. Merge sort continuously breaks down an array into several subarrays until each subarray consists of a single element and merging those subarrays repeatedly forms a sorted array at the end. Merge sort can be used to solve several important problems with ease. Some of the most famous problems that can be solved using merge sort are counting the number of inversions and efficiently sorting large datasets on computers with small RAMs.
+### Other Resources:
+https://www.geeksforgeeks.org/merge-sort/
+<br>
